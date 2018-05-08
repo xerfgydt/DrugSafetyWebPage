@@ -1,4 +1,4 @@
 package designprojekt.Repositories;
 
-public class IndexRep {
+public class QARepository {
 }
