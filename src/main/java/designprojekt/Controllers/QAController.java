@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class QAController {
 
-    @RequestMapping
+    @RequestMapping("/qa")
     public String QA(Model model) {
         return "qa";
     }

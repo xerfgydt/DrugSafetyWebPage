@@ -1,5 +1,11 @@
-#menu {
-    background-color: #D3D3D3;
-    font-size: 32px;
+.navbar-default {
+    background-color: #FAF0E6;
+}
+
+li {
+    background-color: #FAF0E6;
+    font-size: 18px;
     font-family: Arial;
+    font-weight: bold;
+    margin-right: 40px;
 }

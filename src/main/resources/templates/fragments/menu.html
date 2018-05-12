@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" th:href="static/menu.css" />
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../static/menu.css" th:href="@{menu.css}" />
 </head>
 <body>
-<div class="container" id="menu">
 <div th:fragment="menu">
 <img src="https://www.drugsafetyconsult.com/CustomerData/Files/Images/Archive/1-grafik/logo_3.png" />
 <nav class="navbar navbar-default navbar-top">
@@ -23,7 +20,6 @@
         </ul>
     </div>
 </nav>
-</div>
 </div>
 
 </body>
