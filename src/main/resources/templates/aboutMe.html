@@ -1,27 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>About me</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/menu.css" th:href="@{menu.css}"/>
+    <link rel="stylesheet" type="text/css" href="../static/base.css" th:href="@{base.css}"/>
 </head>
 <body>
-<h1>About me</h1>
-<p>Dr. Lisbeth Tofte Hemmingsen</p>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-8">
+        <div th:include="fragments/menu :: menu"></div>
+        </div>
+    </div>
 
-<p>Dr. Lisbeth Tofte has founded the independent consultancy, Drug Safety Consult. The focus is on patient safety and QA services within pharmacovigilance,
-    PASS and clinical development to biotech and pharmaceutical companies,
-    academia and other institutions working in the health care business.</p>
+    <div class="row">
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-10">
+        <h1>About me</h1>
+        <p>Dr. Lisbeth Tofte Hemmingsen</p>
 
-<p>Dr. Lisbeth Tofte graduated from the Royal Dental University
-    of Copenhagen to join the pharmaceutical industry shortly after.</p>
+        <p>Dr. Lisbeth Tofte has founded the independent consultancy, Drug Safety Consult. The focus is on patient
+            safety and QA services within pharmacovigilance,
+            PASS and clinical development to biotech and pharmaceutical companies,
+            academia and other institutions working in the health care business.</p>
 
-<p>As Group Director of International Quality Assurance at Nycomed, Dr. Lisbeth Tofte held the global responsibility for quality management of clinical development and pharmacovigilance and has been the driving force behind quality systems and concepts established to facilitate compliance with GCP, GVP,
-    and PAS requirements both centrally and across affiliates.</p>
+        <p>Dr. Lisbeth Tofte graduated from the Royal Dental University
+            of Copenhagen to join the pharmaceutical industry shortly after.</p>
 
-<p>With more than 25 years' experience, Dr. Lisbeth Tofte has held responsibility for international development programs in several therapeutic areas, working for GSK and NovoNordisk on novel chemical entities, biosynthetic drugs, and human plasma products.</p>
+        <p>As Group Director of International Quality Assurance at Nycomed, Dr. Lisbeth Tofte held the global
+            responsibility for quality management of clinical development and pharmacovigilance and has been the driving
+            force behind quality systems and concepts established to facilitate compliance with GCP, GVP, and PAS
+            requirements both
+            centrally and across affiliates.</p>
 
-<p>Dr. Lisbeth Tofte is author of articles and books. She is correspondent on Clinical and QA Advisor. She has developed three levels of online Pharmacovigilance training for Brookwood Academy.  www.brookwoodtraining-online.net</p>
+        <p>With more than 25 years' experience, Dr. Lisbeth Tofte has held responsibility for international development
+            programs in several therapeutic areas, working for GSK and NovoNordisk on novel chemical entities,
+            biosynthetic drugs, and human plasma products.</p>
 
-<p>Her easy to understand books on Pharmacovigliance, Data Protection, and Computer Validation are issued by Canary Ltd,</p>
+        <p>Dr. Lisbeth Tofte is author of articles and books. She is correspondent on Clinical and QA Advisor. She has
+            developed three levels of online Pharmacovigilance training for Brookwood Academy.
+            www.brookwoodtraining-online.net</p>
+
+        <p>Her easy to understand books on Pharmacovigliance, Data Protection, and Computer Validation are issued by
+            Canary Ltd,</p>
+        </div>
+    </div>
+</div>
 </body>
 </html>
