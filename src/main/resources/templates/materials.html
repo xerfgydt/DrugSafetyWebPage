@@ -9,5 +9,9 @@
 <body>
 <div th:include="fragments/menu :: menu"></div>
 
+<ul th:each="material : ${materials}">
+    <li th:text="${material}"><a th:href="@{/readMaterial}"></a></li>
+</ul>
+
 </body>
 </html>
