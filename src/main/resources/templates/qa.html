@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+
+    <title>Q/A (Questions and answers)</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../static/menu.css" th:href="@{menu.css}" />
 </head>
 <body>
+<div th:include="fragments/menu :: menu"></div>
+
+<ul th:each="qa : ${qaList}">
+    <li th:text="${qa.question}"></li>
+    <li th:text="${qa.answer}"></li>
+    <li th:text="${qa.date}"></li>
+</ul>
 
 </body>
 </html>

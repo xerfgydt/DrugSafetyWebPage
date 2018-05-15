@@ -9,8 +9,8 @@
 <body>
 <div th:include="fragments/menu :: menu"></div>
 
-<ul th:each="material : ${materials}">
-    <li th:text="${material}"><a th:href="@{/readMaterial}"></a></li>
+<ul th:each="m : ${materials}">
+    <a target="_blank" th:href="@{${m}}"><li th:text="${m}"></li></a>
 </ul>
 
 </body>

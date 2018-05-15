@@ -40,7 +40,7 @@ public class MaterialController {
         @RequestMapping(value="/readMaterial", method=RequestMethod.GET)
         public String readMaterial(Model model, @RequestParam("link") String link) {
             model.addAttribute("material", materialRepository.read(link));
-            return "readMaterial";
+            return "redirect:/materials";
         }
 
         @RequestMapping(value = "/updateMaterial", method = RequestMethod.POST)
