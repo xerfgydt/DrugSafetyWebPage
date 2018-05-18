@@ -19,7 +19,6 @@ public class MaterialController {
 
         @RequestMapping(value="/materials", method=RequestMethod.GET)
         public String materials(Model model) {
-            materialRepository.create(new Material("https://google.com"));
             model.addAttribute("materials", materialRepository.readAll());
             System.out.println(materialRepository.readAll());
             return "materials";
@@ -28,6 +27,12 @@ public class MaterialController {
         @RequestMapping(value="/createMaterial", method=RequestMethod.GET)
         public String createMaterial(Model model) {
             model.addAttribute("material", new Material());
+            if (materialRepository.readAll() == null) {
+                materialRepository.create(new Material("https://www.canarybooks.com/A-Guide-to-European-Data-Protection"));
+                materialRepository.create(new Material("https://www.canarybooks.com/Pharmacovigilance"));
+                materialRepository.create(new Material("https://www.brookwoodtraining-online.net/Data-Protection"));
+                materialRepository.create(new Material("https://www.brookwoodtraining-online.net/Pharmacovigilance"));
+            }
             return "createMaterial";
         }
 
