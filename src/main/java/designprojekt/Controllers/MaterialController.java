@@ -18,9 +18,9 @@ public class MaterialController {
     private MaterialRepository materialRepository = new MaterialRepository();
 
         @RequestMapping(value="/materials", method=RequestMethod.GET)
-        public String materials(Model model) {
-            model.addAttribute("materials", materialRepository.readAll());
-            System.out.println(materialRepository.readAll());
+        public String materials() {
+            //model.addAttribute("materials", materialRepository.readAll());
+            //System.out.println(materialRepository.readAll());
             return "materials";
         }
 
