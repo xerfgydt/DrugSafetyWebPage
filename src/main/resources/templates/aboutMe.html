@@ -11,19 +11,7 @@
 
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-md-1">
-        </div>
-        <div class="col-md-11">
-        <div th:include="fragments/menu :: menu"></div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-1">
-        </div>
-        <div class="col-md-11">
+<div th:include="fragments/menu :: menu"></div>
         <h1>About me</h1>
         <p>Dr. Lisbeth Tofte Hemmingsen</p>
 
@@ -51,9 +39,6 @@
 
         <p>Her easy to understand books on Pharmacovigliance, Data Protection, and Computer Validation are issued by
             Canary Ltd,</p>
-        </div>
-    </div>
     <div th:include="fragments/contactInfo :: contactInfo"></div>
-</div>
 </body>
 </html>
