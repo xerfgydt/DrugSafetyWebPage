@@ -1,11 +1,16 @@
-.navbar {
-    background-color: #FAF0E6;
-}
-
 li {
-    background-color: #FAF0E6;
     font-size: 18px;
     font-family: Arial;
     font-weight: bold;
     margin-right: 40px;
+    font-color: black;
+}
+
+a {
+    color: black;
+}
+
+.menu {
+    background-color: aqua;
+    width: 100%;
 }

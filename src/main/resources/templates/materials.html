@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="../static/menu.css" th:href="@{menu.css}" />
     <link rel="stylesheet" type="text/css" href="../static/base.css" th:href="@{base.css}"/>
+    <link rel="stylesheet" type="text/css" href="../../static/contactInfo.css" th:href="@{contactInfo.css}"/>
+
 
 </head>
 <body>
@@ -17,6 +19,6 @@
     <a target="_blank" href="https://www.brookwoodtraining-online.net/Data-Protection"><li>Data Protection</li></a>
     <a target="_blank" href="https://www.brookwoodtraining-online.net/Pharmacovigilance"><li>Online training: Pharmacovigilance</li></a>
 </ul>
-
+<div th:include="fragments/contactInfo :: contactInfo"></div>
 </body>
 </html>

@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="../static/menu.css" th:href="@{menu.css}"/>
     <link rel="stylesheet" type="text/css" href="../static/base.css" th:href="@{base.css}"/>
+    <link rel="stylesheet" type="text/css" href="../../static/contactInfo.css" th:href="@{contactInfo.css}"/>
+
 </head>
 <body>
 <div class="container">
@@ -51,6 +53,7 @@
             Canary Ltd,</p>
         </div>
     </div>
+    <div th:include="fragments/contactInfo :: contactInfo"></div>
 </div>
 </body>
 </html>
