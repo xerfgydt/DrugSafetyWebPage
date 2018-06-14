@@ -9,7 +9,7 @@ public class Material {
 
     public Material() {
     }
-
+//
     public String getLink() {
         return link;
     }
