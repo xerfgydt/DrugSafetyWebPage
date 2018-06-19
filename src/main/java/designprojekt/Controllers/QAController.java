@@ -16,8 +16,8 @@ public class QAController {
     @RequestMapping("/qa")
     public String QA(Model model) {
         qaRepository.create(new QA("How old is the organisation?", "10 years old", LocalDate.now()));
-        //qaRepository.create(new QA("?", "Ikke så meget :D", LocalDate.now()));
-        //qaRepository.create(new QA("Hvor kommer du fra?", "Danmark", LocalDate.now()));
+        qaRepository.create(new QA("For how long have you worked with pharmacovigilance?", "for 30 years", LocalDate.now()));
+        qaRepository.create(new QA("What is the price for an audit?", "50000 DKR", LocalDate.now()));
         model.addAttribute("qaList", qaRepository.readAll());
         return "qa";
     }
